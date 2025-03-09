@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Newsroom Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1>RETRO NEWSROOM</h1>
+        <button class="start-button" aria-label="Toggle Sidebar">Start</button>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- News Ticker -->
+    <div class="ticker">
+        <div class="ticker-content"></div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard">
+        <!-- Column 1 -->
+        <div class="column">
+            <div class="widget" id="reddit-feed">
+                <h2>Reddit Feed</h2>
+                <div class="reddit-posts"></div>
+            </div>
+            <div class="widget" id="favorites-box">
+                <h2>Favorites</h2>
+                <div class="favorites-list"></div>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="column">
+            <div class="widget" id="youtube-player">
+                <h2>Retro TV</h2>
+                <div class="tv-frame">
+                    <img src="assets/retro-tv.png" alt="Retro TV Frame">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="widget" id="image-gallery">
+                <h2>Image Gallery</h2>
+                <div class="gallery">
+                    <img src="assets/screenshots/screenshot1.png" alt="Screenshot 1" class="active">
+                    <img src="assets/screenshots/screenshot2.png" alt="Screenshot 2">
+                </div>
+            </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="column">
+            <div class="widget" id="book-definitions">
+                <h2>Book Definitions</h2>
+                <div class="book-covers">
+                    <div class="book-cover">
+                        <img src="assets/book-covers/book1.jpg" alt="Book 1">
+                        <div class="book-definition">Definition for Book 1</div>
+                    </div>
+                    <div class="book-cover">
+                        <img src="assets/book-covers/book2.jpg" alt="Book 2">
+                        <div class="book-definition">Definition for Book 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="widget" id="screenshot-feed">
+                <h2>Article Screenshots</h2>
+                <div class="screenshot-gallery">
+                    <img src="assets/screenshots/screenshot1.png" alt="Screenshot 1" class="lightbox-trigger">
+                    <img src="assets/screenshots/screenshot2.png" alt="Screenshot 2" class="lightbox-trigger">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="user-profile">
+            <img src="assets/avatar.png" alt="User Avatar">
+            <h3>John Doe</h3>
+            <p>Newsroom Editor</p>
+        </div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
