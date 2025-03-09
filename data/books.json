@@ -1,0 +1,10 @@
+[
+    {
+        "cover": "assets/book-covers/book1.jpg",
+        "definition": "This is the definition for Book 1."
+    },
+    {
+        "cover": "assets/book-covers/book2.jpg",
+        "definition": "This is the definition for Book 2."
+    }
+]
